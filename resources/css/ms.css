@@ -1,0 +1,28 @@
+.space{
+  border: .1em solid black;
+  width:4em;
+  height:4em;
+  text-align:center;
+  background-color:lightgray;
+  box-shadow: inset .35em .25em .25em .25em gray;
+}
+
+p{
+  padding-top:1em;
+}
+
+.row{
+  display:flex;
+}
+#board{
+  padding-left:2em;
+  padding-top:2.9em;
+  margin:auto;
+}
+body{
+  background-color:lightblue;
+}
+.space img{
+  width:80%;
+  height: auto;
+}

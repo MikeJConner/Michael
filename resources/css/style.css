@@ -6,6 +6,11 @@ a {
   color: black;
 }
 
+.btn-default {
+  border: .1em solid;
+  background-color: black;
+}
+
 /* Uncomment this block of code below to see the page layout divided into sections and divs as rectangles */
 
 /*
@@ -26,7 +31,7 @@ section {
 
 .navbar {
   margin-bottom: 0;
-  z-index: 1;
+  z-index: 2;
   position: fixed;
   width: 100%;
 }
@@ -34,6 +39,7 @@ section {
 /* Jumbotron */
 
 .jumbotron {
+  background: linear-gradient(45deg, #82CAFA, #FAB282);
   margin: 0;
 }
 
@@ -49,17 +55,83 @@ section {
   letter-spacing: 2px;
 }
 
+.heart {
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  transform: rotate(-45deg);
+  animation-name: beat;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.heart:after {
+  background-color: red;
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0px;
+  left: 25px;
+}
+.heart:before {
+  background-color: red;
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  left: 0px;
+}
+@keyframes beat {
+  0% {
+    transform: scale(1) rotate(-45deg);
+  }
+  50% {
+    transform: scale(0.6) rotate(-45deg);
+  }
+}
+
+
 /* Portfolio Section */
 
 #portfolio {
   background-color: rgb(255, 255, 255);
   border: .5em solid;
   border-radius: 1em;
-  margin: .5em;
+  margin: .2em;
 }
 
 .project {
-  height: 16em;
+  height: 23em;
+  border: 20px solid lightgray;
+  box-shadow: inset 0px 0px 2px 2px black;
+  box-sizing: border-box;
+}
+
+.project a{
+  text-decoration: none;
+  color: black;
+}
+
+.project:hover{
+  animation-name: img-hover;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+@keyframes img-hover{
+  100%{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 1em 1em black;
+    z-index: 1;
+  }
 }
 
 .img-box img {
@@ -82,6 +154,10 @@ section {
 
 .img-box {
 height: 14em;
+}
+
+.sect-title{
+  transform: skewX(10deg);
 }
 
 /*Contact Section*/

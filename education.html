@@ -12,62 +12,20 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <!-- Custom stylesheet -->
   <link href="resources/css/style.css" rel="stylesheet" type="text/css">
+  <!-- navbar javascript link -->
+  <script type="text/javascript" src="resources/js/HTMLinAllPages.js"></script>
 </head>
 <body>
   <!-- Header with navbar -->
-  <header>
-    <!-- Navbar with dropdown menu -->
-    <nav class="navbar navbar-inverse navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Michael Conner</a>
-        </div>
-
-        <!-- Dropdown Menu -->
-        <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.html">Home</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Education <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#jumbotron">Overview</a></l
-              <li><a href="#trips">Trips / Camps</a></li>
-              <li><a href="#self-taught">Self Taught Skills / Online Courses</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Extracurriculars <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Overview</a></li>
-              <li><a href="#">Sports</a></li>
-              <li><a href="#">Clubs</a></li>
-              <li><a href="#">Hobbies</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Personal <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Favorite Books</a></li>
-              <li><a href="#">Useful Items</a></li>
-              <li><a href="#">Photo Gallery</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
+  <header id="nav">
+    <script type="text/javascript">displayNavBar();</script>
   </header>
 
   <!-- Main content -->
   <main>
     <!-- Jumbotron -->
     <section id="about" class="jumbotron">
-      <div class="fluid-container text-center">
-        <h1>Future Software Engineer / Computer Scientist</h1>
-        <p>Current junior in high school with a strong passion for programming.</p><br>
-      </div>
+      <script type="text/javascript">displayJumbo();</script>
     </section>
 
     <section id="education-overview">
@@ -79,7 +37,7 @@
           </div>
           <div class="col-md-6 text-center fluid-container school-info">
             <h4>
-              Currently I am a Junior enrolled at Yorba Linda High School where I plan to stay through senior year. While I haven't been super active at school the activities I have done I have all enjoyed. From participating in Key Club, being in a Physics Debate Club, and going on a trip to study business and entrepreneurship in UC Berkley. All the expeciences I have had that were results from going to YLHS have been good ones.  While I don't stress myself taking all AP classes I take what I feel will help me the most; and I have excelled in them with classes like AP Physics and AP Computer Science. I plan to stay on track with that in AP Calculus and AP Physics 2 next year aswell; all the while still having the time and energy to be able to teach myself or learn new skills outside of school, play sports, and persue personal projects in my free time. In terms of college I think it should be obvious I will get a degree in Software Engineering or Computer Science, so colleges with advantageous programs in those areas are top of my list. While still being resonable with my grades and test scrose I have on my college list, University of California, Irvine; University of Texas, Dallas; and The Oregon Institue of Technology. If I could choose any college it would be The California Institute of Technology, however with their demographics and the extremely high level of students I feel it's very unlikely. But I will be happy with whichever college I end up going to and I look forward to starting my college experience.
+              Currently I am a senior enrolled at Yorba Linda High School where I plan to stay through senior year. While I haven't been super active at school the activities I have done I have all enjoyed. From participating in Key Club, being in a Physics Debate Club, and going on a trip to study business and entrepreneurship in UC Berkley. All the expeciences I have had that were results from going to YLHS have been good ones.  While I don't stress myself taking all AP classes I take what I feel will help me the most; and I have excelled in them with classes like AP Physics and AP Computer Science. I plan to stay on track with that in AP Calculus and AP Physics 2 next year aswell; all the while still having the time and energy to be able to teach myself or learn new skills outside of school, play sports, and persue personal projects in my free time. In terms of college I think it should be obvious I will get a degree in Software Engineering or Computer Science, so colleges with advantageous programs in those areas are top of my list. While still being resonable with my grades and test scrose I have on my college list, University of California, Irvine; University of Texas, Dallas; and The Oregon Institue of Technology. If I could choose any college it would be The California Institute of Technology, however with their demographics and the extremely high level of students I feel it's very unlikely. But I will be happy with whichever college I end up going to and I look forward to starting my college experience.
             </h4>
           </div>
         </div>
@@ -208,6 +166,11 @@
       </div>
     </section>
 
+    <!-- Contact -->
+    <section id="contact">
+      <script type="text/javascript">displayContact();</script>
+    </section>
+
   </main>
 
   <!-- Footer -->
@@ -219,5 +182,4 @@
   <!-- Latest compiled and minified Bootstrap JavaScript for plugins-->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
-
 </html>
